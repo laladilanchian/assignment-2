@@ -1,0 +1,46 @@
+let rectangleHeight=1;
+let rectangleWidth=3;
+let rectangleArea= rectangleHeight * rectangleWidth;
+let triangleHeight=10;
+let triangleBase=5;
+let triangleArea= (triangleBase * triangleHeight)/2;
+
+if(rectangleArea>triangleArea){
+    console.log("the reactangle has a bigger area.")
+}else if(triangleArea>rectangleArea){
+    console.log("the triangle has a bigger area.")
+}else{
+    console.log("both areas are equal!") 
+    }
+
+//
+
+let a=1;
+let b=4;
+let c=4;
+let delta=(Math.pow(b , 2))-(4*a*c);
+if(a==0){
+    x=-c/b;
+    console.log("x="+ x)  
+}else if(delta>0){
+    let x1= (-b+Math.sqrt(delta))/ (2*a);
+    let x2= (-b-Math.sqrt(delta))/ (2*a);
+    console.log("x1=" + x1);
+    console.log("x2=" + x2);
+}else if(delta==0){
+    let x=-b/2*a
+    console.log("x=" + x);
+}else{
+    console.log("unsolvable");
+}
+
+//
+
+let x1=0;
+let y1=-3;
+let x2=-1;
+let y2=3;
+let a=y1-x1;
+let b=y2-x2;
+let lineLength=Math.sqrt((Math.pow(a , 2))+(Math.pow(b , 2)));
+console.log(lineLength);
